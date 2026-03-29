@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crystal Select | Kerala Traditional Wear</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL THEME ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f6f1;
+  color: #111;
+  scroll-behavior: smooth;
+}
+
+/* ===== NAV ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+}
+
+/* ===== HERO ===== */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-family: 'Playfair Display', cursive;
+  font-size: 22px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 80px 10%;
+}
+
+/* ===== PRODUCTS ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.4s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== PREMIUM PRODUCT ===== */
+.premium-product {
+  background: #fff;
+}
+
+.premium-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.premium-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.premium-details {
+  max-width: 500px;
+}
+
+/* ===== SPLIT SECTION ===== */
+.split-section {
+  background: #f0efe9;
+}
+
+.split-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.split-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+/* ===== CONTACT ===== */
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  color: white;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Crystal Select</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="fade-in">
+    <h1>From Kerala Roots to British Style</h1>
+    <p>Your modern cultural essentials.</p>
+
+    <a href="#products" class="btn">Explore Products</a>
+    <a href="https://wa.me/447767952747" target="_blank" class="btn">Order on WhatsApp</a>
+  </div>
+</section>
+
+<section id="products">
+  <h2 class="fade-in">Our Collection</h2>
+
+  <div class="grid">
+
+    <div class="card fade-in">
+      <img src="images/WhatsApp Image 2026-03-29 at 19.06.09.jpeg">
+       <p>Traditional Kerala wear with gold border.</p> 
+      <h3>Kasavu Mundu</h3>
+      <p>£17.99</p>
+      <p>100% Cotton • Stretchable • Ready to Wear • Unisex </p>
+      <a href="https://wa.me/447767952747" target="_blank" class="btn">
+    Order Now
+  </a>
+    </div>
+
+    <div class="card fade-in">
+      <img src="images/WhatsApp Image 2026-03-29 at 19.00.27.jpeg">
+      <p>Traditional Kerala wear Dhothi.</p> 
+      <h3>Elastic Dhoti Black with White design </h3>
+      <p>£19.99</p>
+      <p>100% Cotton • Stretchable • Ready to Wear • Unisex </p>
+      <a href="https://wa.me/447767952747" target="_blank" class="btn">
+    Order Now
+  </a>
+    </div>
+
+    <div class="card fade-in">
+      <img src="images/WhatsApp Image 2026-03-29 at 18.57.32.jpeg">
+      <h3>Elastic Dhoti Red  </h3>
+      <p>£19.99</p>
+      <p>100% Cotton • Stretchable • Ready to Wear • Unisex </p>
+      <a href="https://wa.me/447767952747" target="_blank" class="btn">
+    Order Now
+  </a>
+    </div>
+
+    <div class="card fade-in">
+      <img src="images/WhatsApp Image 2026-03-29 at 18.44.49.jpeg">
+      <h3>Elastic Dhoti Tradiational design  </h3>
+      <p>£19.99</p>
+      <p>100% Cotton • Stretchable • Ready to Wear • Unisex </p>
+      <a href="https://wa.me/447767952747" target="_blank" class="btn">
+    Order Now
+  </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PREMIUM PRODUCT -->
+<section class="premium-product">
+
+  <div class="premium-container">
+
+    <div class="premium-image">
+      <img src="images/WhatsApp Image 2026-03-29 at 15.28.58.jpeg">
+    </div>
+
+    <div class="premium-details">
+      <h2>Premium Felixo Dhoti</h2>
+
+      <p>
+        Knitted fabric | 100% cotton | Silicon washed | Bio washed | Stretchable | Unisex | Ready to wear with pockets
+      </p>
+
+      <p><strong>Price:</strong> £29.99</p>
+      <p><strong>Sizes:</strong> S / M / L / XL</p>
+
+      <a href="https://wa.me/447767952747" class="btn">Order on WhatsApp</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SPLIT SECTION -->
+<section class="split-section">
+
+  <div class="split-container">
+
+    <div>
+      <h2>Modern Tradition</h2>
+      <p>
+        Premium Felixo Dhoti blends Kerala heritage with modern comfort.
+        Designed for everyday wear with stretchable fabric and pockets.
+      </p>
+    </div>
+
+    <div class="split-image">
+      <img small src="images/WhatsApp Image 2026-03-21 at 21.20.03 (1).jpeg">
+      <img small src="images/WhatsApp Image 2026-03-21 at 21.18.12 (1).jpeg">
+      <img small src="images/WhatsApp Image 2026-03-21 at 21.30.08 (1).jpeg">
+      
+      
+      
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2 class="fade-in">Contact</h2>
+
+  <p>Email: crystalselect.uk@gmail.com</p>
+  <p>WhatsApp: +44 7767952747</p>
+  <p>Delivery: Worldwide (£5.49)</p>
+
+  <a href="https://wa.me/447767952747" class="btn">Order Now</a>
+
+  <iframe src="https://maps.app.goo.gl/ZwtnHGMX1y4hpdbTA"></iframe>
+</section>
+
+<footer>
+  <p>© 2026 Crystal Select</p>
+</footer>
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (position < screenHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
