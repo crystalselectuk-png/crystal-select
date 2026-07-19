@@ -438,3 +438,122 @@ footer {
   background: #111;
   color: white;
 }
+
+/* Mobile and tablet view */
+@media (max-width: 768px) {
+  nav {
+    padding: 12px 5%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .brand {
+    gap: 10px;
+    font-size: 1rem;
+  }
+
+  .brand img {
+    width: 54px;
+    height: 54px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  section {
+    padding: 50px 5%;
+  }
+
+  .hero {
+    height: 70vh;
+    padding: 0 5%;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card img {
+    height: 360px;
+  }
+
+  .collection-heading {
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+
+  .collection-heading img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .collection-heading h2 {
+    font-size: 1.25rem;
+  }
+
+  .premium-container,
+  .split-container {
+    flex-direction: column;
+    gap: 25px;
+    align-items: stretch;
+  }
+
+  .premium-image img {
+    max-width: 100%;
+  }
+
+  .split-image {
+    justify-content: center;
+  }
+
+  .split-image img {
+    width: calc(50% - 8px);
+  }
+}
+
+/* Small phone view */
+@media (max-width: 480px) {
+  .brand span {
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .card img {
+    height: 300px;
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+
+  .collection-heading h2 {
+    font-size: 1.1rem;
+  }
+
+  .order-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .split-image img {
+    width: 100%;
+  }
+}
