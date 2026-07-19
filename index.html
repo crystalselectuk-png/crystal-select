@@ -1,194 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Crystal Select | Kerala Traditional Wear</title>
+  <title>Crystal Select | Kerala Traditional Wear</title>
+  <!--<title>Crystal Select | TRENDITIONAL - where tradition meet trend</title>-->
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-<style>
-
-/* ===== GLOBAL THEME ===== */
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f8f6f1;
-  color: #111;
-  scroll-behavior: smooth;
-}
-
-/* ===== NAV ===== */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 10%;
-  background: white;
-  border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  font-weight: 600;
-}
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #111;
-}
-
-/* ===== HERO ===== */
-.hero {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  padding: 0 10%;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-              url('https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf');
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 48px;
-}
-
-.hero p {
-  font-family: 'Playfair Display', cursive;
-  font-size: 22px;
-}
-
-/* ===== BUTTONS ===== */
-.btn {
-  display: inline-block;
-  padding: 12px 18px;
-  margin-top: 20px;
-  margin-right: 10px;
-  background: white;
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #ddd;
-}
-
-/* ===== SECTIONS ===== */
-section {
-  padding: 80px 10%;
-}
-
-/* ===== PRODUCTS ===== */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  transition: 0.4s;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* ===== PREMIUM PRODUCT ===== */
-.premium-product {
-  background: #fff;
-}
-
-.premium-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-}
-
-.premium-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-}
-
-.premium-details {
-  max-width: 500px;
-}
-
-/* ===== SPLIT SECTION ===== */
-.split-section {
-  background: #f0efe9;
-}
-
-.split-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-}
-
-.split-image img {
-  width: 100%;
-  max-width: 450px;
-  border-radius: 10px;
-}
-
-/* ===== CONTACT ===== */
-iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #111;
-  color: white;
-}
-
-/* ===== ANIMATIONS ===== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 1s;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-</style>
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<nav>
+<!--<nav>
   <div class="logo">Crystal Select</div>
+
+  <a href="#home" class="logo">
+    <img src="images/logo_crystalselect.jpeg" alt="Crystal Select logo"> Crystal Select
+  </a>
+
   <div>
+    <a href="#home"><strong>Home</strong></a>
+    <a href="#products"><strong>Products</strong></a>
+    <a href="#contact"><strong>Contact</strong></a>
+  </div>
+</nav>-->
+
+<nav>
+  <a href="#home" class="brand">
+    <img src="images/logo_crystalselect.jpeg" alt="Crystal Select logo">
+    <span>Crystal Select</span>
+  </a>
+
+  <div class="nav-links">
     <a href="#home">Home</a>
     <a href="#products">Products</a>
     <a href="#contact">Contact</a>
@@ -196,63 +44,351 @@ footer {
 </nav>
 
 <section class="hero" id="home">
-  <div class="fade-in">
-    <h1>From Kerala Roots to British Style</h1>
+
+  <img src="images/mundu-banner.png" alt="Hero Image" class="hero-img">
+
+  <div class="overlay"></div>
+
+  <div class="fade-in hero-content">
+    <h1>TRENDITIONAL - where tradition meet trend</h1>
     <p>Your modern cultural essentials.</p>
 
     <a href="#products" class="btn">Explore Products</a>
-    <a href="https://wa.me/447767952747" target="_blank" class="btn">Order on WhatsApp</a>
+
+    <!--<a href="https://wa.me/447767952747" target="_blank" rel="noopener" class="btn">
+      Order Now(UK)
+    </a>
+    <a href="https://wa.me/916282258691" target="_blank" rel="noopener" class="btn btn-india">
+      Order Now(IN)
+    </a>
+
+    <a href="https://wa.me/447767952747" target="_blank" rel="noopener" class="btn">
+      Order Now
+    </a>-->
+
   </div>
+
 </section>
 
 <section id="products">
-  <h2 class="fade-in">Our Collection</h2>
+
+  <!--<h2 class="fade-in">Our Collection</h2>
+  <a href="#products" class="logo">
+    <span><img src="images/logo_felixo.jpeg" alt="Felixo logo"></span><span></span> <span> Felixo Dhoti Collection </span> 
+  </a>-->
+  <div class="collection-heading fade-in">
+      <img src="images/logo_felixo.jpeg" alt="Felixo logo"> <h2>Felixo Dhoti Collection</h2>
+
+  </div>
 
   <div class="grid">
 
     <div class="card fade-in">
+
       <img src="images/Kasavu Mundu.jpeg">
-       <p>Traditional Kerala wear with gold border.</p> 
-      <h3>Kasavu Mundu</h3>
-      <p>£17.99</p>
-      <p>100% Cotton • Stretchable • Ready to Wear • Unisex </p>
-      <a href="https://wa.me/447767952747" target="_blank" class="btn">
-    Order Now
-  </a>
+
+      <div class="card-content">
+
+        <p>Traditional Kerala wear with gold border.</p>
+
+        <h3>Felixo Kasavu Mundu Size 1.5"</h3>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span class="price-label">UK price</span>
+            <del class="old-price">£17.99</del>
+            <span class="new-price">£13.99</span>
+          </div>
+
+          <div class="price-row">
+            <span class="price-label">India price</span>
+            <span class="new-price">₹999.00</span>
+          </div>
+        </div>
+
+        <!--<div class="price">
+          <del class="old-price">£17.99</del>
+          <span class="new-price">£13.99</span>
+        </div>-->
+
+        <div class="quantity-control">
+          <span>Quantity</span>
+
+          <div class="quantity-buttons">
+            <button type="button" class="quantity-btn decrease" aria-label="Decrease quantity">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-btn increase" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <p>100% Cotton • Stretchable • Ready to Wear • Unisex</p>
+
+        <!--<a href="https://wa.me/447767952747" target="_blank" class="btn">
+          Order(UK)
+        </a>-->
+
+        
+        <div class="order-actions">
+          <a href="https://wa.me/447767952747?text=Hi%2C%20I%20would%20like%20to%20order%20Kasavu%20Mundu%20with%20Gold%20border%20Size%201.5."
+            target="_blank" rel="noopener" class="btn">
+          Order Now(UK)
+          </a>
+        
+          <a href="https://wa.me/916282258691?text=Hi%2C%20I%20would%20like%20to%20order%20Kasavu%20Mundu%20with%20Gold%20border%20Size%201.5."
+            target="_blank" rel="noopener" class="btn btn-india">
+          Order Now(India)
+          </a>
+        </div>
+
+      </div>
     </div>
 
     <div class="card fade-in">
+
+      <img src="images/Silver Kasavu Mundu.png">
+
+      <div class="card-content">
+
+        <p>Traditional Kerala wear with Silver border.</p>
+
+        <h3>Felixo Kasavu Mundu Size 1"</h3>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span class="price-label">UK price</span>
+            <del class="old-price">£17.99</del>
+            <span class="new-price">£13.49</span>
+          </div>
+
+          <div class="price-row">
+            <span class="price-label">India price</span>
+            <span class="new-price">₹949.00</span>
+          </div>
+        </div>
+
+        <!--<div class="price">
+          <del class="old-price">£17.99</del>
+          <span class="new-price">£13.49</span>
+        </div>-->
+
+        <div class="quantity-control">
+          <span>Quantity</span>
+
+          <div class="quantity-buttons">
+            <button type="button" class="quantity-btn decrease" aria-label="Decrease quantity">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-btn increase" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <p>100% Cotton • Stretchable • Ready to Wear • Unisex</p>
+
+        <!--<a href="https://wa.me/447767952747" target="_blank" class="btn">
+          Order Now
+        </a>-->
+
+        
+        <div class="order-actions">
+          <a href="https://wa.me/447767952747?text=Hi%2C%20I%20would%20like%20to%20order%20Kasavu%20Mundu%20with%20Silver%20border%20Size%201."
+            target="_blank" rel="noopener" class="btn">
+          Order Now(UK)
+          </a>
+        
+          <a href="https://wa.me/916282258691?text=Hi%2C%20I%20would%20like%20to%20order%20Kasavu%20Mundu%20with%20Silver%20border%20Size%201."
+            target="_blank" rel="noopener" class="btn btn-india">
+          Order Now(India)
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card fade-in">
+
       <img src="images/Elastic Dhoti Black with White design.jpeg">
-      <p>Traditional Kerala wear Dhothi.</p> 
-      <h3>Elastic Dhoti Black with White design </h3>
-      <p>£19.99</p>
-      <p>100% Cotton • Stretchable • Ready to Wear • Unisex </p>
-      <a href="https://wa.me/447767952747" target="_blank" class="btn">
-    Order Now
-  </a>
+
+      <div class="card-content">
+
+        <p>Traditional Kerala wear Dhothi.</p>
+
+        <h3>Felixo Elastic Dhoti Black with White design</h3>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span class="price-label">UK price</span>
+            <del class="old-price">£19.99</del>
+            <span class="new-price">£16.99</span>
+          </div>
+
+          <div class="price-row">
+            <span class="price-label">India price</span>
+            <span class="new-price">₹1099.00</span>
+          </div>
+        </div>
+
+        <!--<div class="price">
+          <del class="old-price">£19.99</del>
+          <span class="new-price">£15.99</span>
+        </div>-->
+
+        <div class="quantity-control">
+          <span>Quantity</span>
+
+          <div class="quantity-buttons">
+            <button type="button" class="quantity-btn decrease" aria-label="Decrease quantity">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-btn increase" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <p>100% Cotton • Stretchable • Ready to Wear • Unisex</p>
+        
+
+        <!--<a href="https://wa.me/447767952747" target="_blank" class="btn">
+          Order Now
+        </a>-->
+
+        
+        <div class="order-actions">
+          <a href="https://wa.me/447767952747?text=Hi%2C%20I%20would%20like%20to%20order%20Elastic%20Dhoti%20Black%20with%20White%20design."
+            target="_blank" rel="noopener" class="btn">
+          Order Now(UK)
+          </a>
+        
+          <a href="https://wa.me/916282258691?text=Hi%2C%20I%20would%20like%20to%20order%20Elastic%20Dhoti%20Black%20with%20White%20design."
+            target="_blank" rel="noopener" class="btn btn-india">
+          Order Now(India)
+          </a>
+        </div>
+
+      </div>
     </div>
 
     <div class="card fade-in">
+
       <img src="images/Elastic Dhoti Red.jpeg">
-      <h3>Elastic Dhoti Red  </h3>
-      <p>£19.99</p>
-      <p>100% Cotton • Stretchable • Ready to Wear • Unisex </p>
-      <a href="https://wa.me/447767952747" target="_blank" class="btn">
-    Order Now
-  </a>
+
+      <div class="card-content">
+
+        <p>Traditional Kerala wear Dhothi.</p>
+
+        <h3>Felixo Elastic Dhoti Red</h3>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span class="price-label">UK price</span>
+            <del class="old-price">£19.99</del>
+            <span class="new-price">£16.99</span>
+          </div>
+
+          <div class="price-row">
+            <span class="price-label">India price</span>
+            <span class="new-price">₹1099.00</span>
+          </div>
+        </div>
+
+        <!--<div class="price">
+          <del class="old-price">£19.99</del>
+          <span class="new-price">£15.99</span>
+        </div>-->
+
+        <div class="quantity-control">
+          <span>Quantity</span>
+
+          <div class="quantity-buttons">
+            <button type="button" class="quantity-btn decrease" aria-label="Decrease quantity">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-btn increase" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <p>100% Cotton • Stretchable • Ready to Wear • Unisex</p>
+        
+
+        <!--<a href="https://wa.me/447767952747" target="_blank" class="btn">
+          Order Now
+        </a>-->
+
+        
+        <div class="order-actions">
+          <a href="https://wa.me/447767952747?text=Hi%2C%20I%20would%20like%20to%20order%20Elastic%20Dhoti%20Red."
+            target="_blank" rel="noopener" class="btn">
+          Order Now(UK)
+          </a>
+        
+          <a href="https://wa.me/916282258691?text=Hi%2C%20I%20would%20like%20to%20order%20Elastic%20Dhoti%20Red."
+            target="_blank" rel="noopener" class="btn btn-india">
+          Order Now(India)
+          </a>
+        </div>
+
+      </div>
     </div>
 
     <div class="card fade-in">
+
       <img src="images/Elastic Dhoti Tradiational design.jpeg">
-      <h3>Elastic Dhoti Tradiational design  </h3>
-      <p>£19.99</p>
-      <p>100% Cotton • Stretchable • Ready to Wear • Unisex </p>
-      <a href="https://wa.me/447767952747" target="_blank" class="btn">
-    Order Now
-  </a>
+
+      <div class="card-content">
+
+        <p>Traditional Kerala wear Dhothi.</p>
+
+        <h3>Felixo Elastic Dhoti Traditional design</h3>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span class="price-label">UK price</span>
+            <del class="old-price">£19.99</del>
+            <span class="new-price">£16.99</span>
+          </div>
+
+          <div class="price-row">
+            <span class="price-label">India price</span>
+            <!--<del class="old-price">₹1499.00</del>-->
+            <span class="new-price">₹1099.00</span>
+          </div>
+        </div>
+
+        <!--<div class="price">
+          <del class="old-price">£19.99</del>
+          <span class="new-price">£15.99</span>
+        </div>-->
+
+        <div class="quantity-control">
+          <span>Quantity</span>
+
+          <div class="quantity-buttons">
+            <button type="button" class="quantity-btn decrease" aria-label="Decrease quantity">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-btn increase" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <p>100% Cotton • Stretchable • Ready to Wear • Unisex</p>
+        
+
+        <!--<a href="https://wa.me/447767952747" target="_blank" class="btn">
+          Order Now
+        </a>-->
+
+        
+        <div class="order-actions">
+          <a href="https://wa.me/447767952747?text=Hi%2C%20I%20would%20like%20to%20order%20Elastic%20Dhoti%20Traditional%20design."
+            target="_blank" rel="noopener" class="btn">
+          Order Now(UK)
+          </a>
+        
+          <a href="https://wa.me/916282258691?text=Hi%2C%20I%20would%20like%20to%20order%20Elastic%20Dhoti%20Traditional%20design."
+            target="_blank" rel="noopener" class="btn btn-india">
+          Order Now(India)
+          </a>
+        </div>
+
+      </div>
     </div>
 
   </div>
+
 </section>
 
 <!-- PREMIUM PRODUCT -->
@@ -261,20 +397,56 @@ footer {
   <div class="premium-container">
 
     <div class="premium-image">
-      <img src="images/Premium Felixo Dhoti.jpeg">
+      <img src="images/Premium Felixo Dhoti.jpeg" alt="Premium Felixo Dhoti">
     </div>
 
     <div class="premium-details">
-      <h2>Premium Felixo Dhoti</h2>
+
+      <h2>Felixo Premium Dhoti</h2>
 
       <p>
-        Knitted fabric | 100% cotton | Silicon washed | Bio washed | Stretchable | Unisex | Ready to wear with pockets
+        Unisex | Knitted fabric | 100% cotton | Silicon washed |
+        Bio washed | Stretchable | 
+        Ready to wear with pockets | Elastic Rib for Waist
       </p>
 
-      <p><strong>Price:</strong> £29.99</p>
-      <p><strong>Sizes:</strong> S / M / L / XL</p>
+      <div class="price">
+        <strong>Price:</strong>
+        <del class="old-price">£17.99</del>
+        <span class="new-price">£16.99</span>
+      </div>
 
-      <a href="https://wa.me/447767952747" class="btn">Order on WhatsApp</a>
+      <!--<p><strong>Sizes:</strong> S / M / L / XL</p>-->
+
+      <p><strong>Sizes:</strong> L / XL</p>
+
+        <div class="quantity-control">
+          <span>Quantity</span>
+
+          <div class="quantity-buttons">
+            <button type="button" class="quantity-btn decrease" aria-label="Decrease quantity">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-btn increase" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+      <!--<a href="https://wa.me/447767952747" class="btn">
+        Order on WhatsApp
+      </a>-->
+
+        
+      <div class="order-actions">
+        <a href="https://wa.me/447767952747?text=Hi%2C%20I%20would%20like%20to%20order%20Premium%20Felixo%20Dhoti."
+          target="_blank" rel="noopener" class="btn">
+        Order Now(UK)
+        </a>
+      
+        <a href="https://wa.me/916282258691?text=Hi%2C%20I%20would%20like%20to%20order%20Premium%20Felixo%20Dhoti."
+          target="_blank" rel="noopener" class="btn btn-india">
+        Order Now(India)
+        </a>
+      </div>
+
     </div>
 
   </div>
@@ -286,64 +458,116 @@ footer {
 
   <div class="split-container">
 
-    <div>
+    <div class="split-text">
+
       <h2>Modern Tradition</h2>
+
       <p>
-        Premium Felixo Dhoti blends Kerala heritage with modern comfort.
-        Designed for everyday wear with stretchable fabric and pockets.
+        Premium Felixo Dhoti blends Kerala heritage
+        with modern comfort. Designed for everyday wear
+        with stretchable fabric and pockets.
       </p>
+
     </div>
 
     <div class="split-image">
-      <img small src="images/Modern Tradition1.jpeg">
-      <img small src="images/Modern Tradition2.jpeg">
-      <img small src="images/Modern Tradition3.jpeg">
-      
-      
-      
+
+      <img src="images/Modern Tradition1.jpeg" alt="">
+      <img src="images/Modern Tradition2.jpeg" alt="">
+      <img src="images/Modern Tradition3.jpeg" alt="">
+
     </div>
 
   </div>
 
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
+
   <h2 class="fade-in">Contact</h2>
 
-  <p>Email: crystalselect.uk@gmail.com</p>
-  <p>WhatsApp: +44 7767952747</p>
-  <p>Delivery: Worldwide (£5.49)</p>
+  <p><strong>Email :</strong> crystalselect.uk@gmail.com</p>
+  <!--<p>WhatsApp: +91 6282258691(India),
+               +44 7767952747 (UK)
+  </p>-->
+  <p class="whatsapp-numbers">
+  <span><strong>WhatsApp :</strong></span>
+  <span>+91 6282258691 (India),</span>
+  <span>+44 7767952747 (UK)</span>
+</p>
+  <!--<p>Delivery: Worldwide (£5.49)</p>-->
 
-  <a href="https://wa.me/447767952747" class="btn">Order Now</a>
+  <!--<a href="https://wa.me/447767952747" class="btn">
+    Order Now
+  </a>
 
-  <iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.6146467581543!2d-0.5499573242974969!3d53.242683782476014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48785b1ebe70c025%3A0xa41c50daf0b591cc!2s221%20Burton%20Rd%2C%20Lincoln%20LN1%203TX!5e0!3m2!1sen!2suk!4v1774816587952!5m2!1sen!2suk"
-  width="100%" 
-  height="300" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+  
+  <a href="https://wa.me/447767952747" target="_blank" rel="noopener" class="btn">
+    Order Now(UK)
+  </a>
+  <a href="https://wa.me/916282258691" target="_blank" rel="noopener" class="btn btn-india">
+    Order Now(India)
+  </a>
+  
+  5 Scotgrove Rd
+  LN2 4ZX
+  Lincoln, UK
+  
+  -->
+
+  <!--<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.6146467581543!2d-0.5499573242974969!3d53.242683782476014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48785b1ebe70c025%3A0xa41c50daf0b591cc!2s221%20Burton%20Rd%2C%20Lincoln%20LN1%203TX!5e0!3m2!1sen!2suk!4v1774816587952!5m2!1sen!2suk"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>-->
+
+</section>
 
 <footer>
   <p>© 2026 Crystal Select</p>
+  <!--<div class="social-links">
+    <a href="https://www.instagram.com/crystal__select?igsh=dTVmczM3OWowNDl6&utm_source=qr" target="_blank" rel="noopener">
+      Instagram
+    </a>
+
+    <a href="https://www.facebook.com/share/19A7K9a4ro/?mibextid=wwXIfr" target="_blank" rel="noopener">
+      Facebook
+    </a>
+
+    <a href="https://youtube.com/@crystalselect?si=cRjScVgQ-uiP5UA_" target="_blank" rel="noopener">
+      YouTube
+    </a>
+
+    <a href="https://www.tiktok.com/@crystalselect?_r=1&_t=ZN-988yDYSfDpG" target="_blank" rel="noopener">
+      Tiktok
+    </a>
+  </div>-->
+
+  <div class="social-links">
+  <a href="https://www.instagram.com/crystal__select?igsh=dTVmczM3OWowNDl6&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/share/19A7K9a4ro/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+
+  <a href="https://youtube.com/@crystalselect?si=cRjScVgQ-uiP5UA_" target="_blank" rel="noopener" aria-label="YouTube">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+
+  <a href="https://www.tiktok.com/@crystalselect?_r=1&_t=ZN-988yDYSfDpG" target="_blank" rel="noopener" aria-label="TikTok">
+    <i class="fa-brands fa-tiktok"></i>
+  </a>
+</div>
 </footer>
 
-<script>
-const elements = document.querySelectorAll('.fade-in');
-
-window.addEventListener('scroll', () => {
-  elements.forEach(el => {
-    const position = el.getBoundingClientRect().top;
-    const screenHeight = window.innerHeight;
-
-    if (position < screenHeight - 100) {
-      el.classList.add('show');
-    }
-  });
-});
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
