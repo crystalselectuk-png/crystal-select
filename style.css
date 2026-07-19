@@ -466,18 +466,18 @@ footer {
   section {
     padding: 50px 5%;
   }
-
-  .hero {
-    /*height: 70vh;
-    padding: 0 5%;*/
-    height: 65vh;
-    /*background: #111;*/
-  }
   
-  .hero-img {
-    object-fit: contain;
-    object-position: center;
-  }
+  .hero {
+  height: 68svh;
+  min-height: 420px;
+  padding: 0 7%;
+  background: #111;
+}
+
+.hero-img {
+  object-fit: cover;
+  object-position: center;
+}
 
   .hero h1 {
     font-size: 2.2rem;
