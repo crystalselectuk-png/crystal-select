@@ -468,8 +468,15 @@ footer {
   }
 
   .hero {
-    height: 70vh;
-    padding: 0 5%;
+    /*height: 70vh;
+    padding: 0 5%;*/
+    height: 65vh;
+    background: #111;
+  }
+  
+  .hero-img {
+    object-fit: contain;
+    object-position: center;
   }
 
   .hero h1 {
