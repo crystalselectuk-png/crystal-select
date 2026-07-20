@@ -79,3 +79,13 @@ navLinks.querySelectorAll('a').forEach(link => {
     menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
   });
 });
+
+document.querySelectorAll('img').forEach(image => {
+  image.addEventListener('contextmenu', event => {
+    event.preventDefault();
+  });
+
+  image.addEventListener('dragstart', event => {
+    event.preventDefault();
+  });
+});
