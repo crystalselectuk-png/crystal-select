@@ -439,6 +439,12 @@ footer {
   color: white;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .menu-toggle {
   display: none;
   border: 0;
