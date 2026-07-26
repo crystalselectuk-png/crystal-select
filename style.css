@@ -5,22 +5,6 @@ body {
   color: #111;
 }
 
-/*------------------------------------
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 10%;
-  background: white;
-  border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  font-weight: 600;
-}
-*/
 nav a {
   margin-left: 20px;
   text-decoration: none;
