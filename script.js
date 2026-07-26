@@ -13,7 +13,6 @@ window.addEventListener('scroll', () => {
 
   });
 
-  //document.querySelectorAll('.card).forEach(card => {
   document.querySelectorAll('.card, .premium-details').forEach(card => {
   const decreaseButton = card.querySelector('.decrease');
   const increaseButton = card.querySelector('.increase');
@@ -28,11 +27,10 @@ window.addEventListener('scroll', () => {
     quantityValue.textContent = quantity;
 
     const title = card.querySelector('h3, h2');
-    const productName = title ? title.textContent.trim() : 'this product';
+    const productName = card.dataset.product || (title ? title.textContent.trim() : 'this product');
     
     orderLinks.forEach(link => {
       const url = new URL(link.href);
-      //const productName = card.querySelector('h3').textContent;
       url.searchParams.set(
         'text',
         `Hi, I would like to order ${quantity} × ${productName}.`
